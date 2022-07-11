@@ -1,0 +1,380 @@
+{
+  "id": "3514802",
+  "name": "Booka",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5902996",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "11372762",
+      "name": "发现",
+      "font_class": "faxian",
+      "unicode": "e8c4",
+      "unicode_decimal": 59588
+    },
+    {
+      "icon_id": "18883560",
+      "name": "书签",
+      "font_class": "shuqian",
+      "unicode": "e6c7",
+      "unicode_decimal": 59079
+    },
+    {
+      "icon_id": "26025720",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e71c",
+      "unicode_decimal": 59164
+    },
+    {
+      "icon_id": "3373451",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "15262810",
+      "name": "1_music95",
+      "font_class": "1_music95",
+      "unicode": "e6ab",
+      "unicode_decimal": 59051
+    },
+    {
+      "icon_id": "15262823",
+      "name": "1_music90",
+      "font_class": "1_music90",
+      "unicode": "e6bf",
+      "unicode_decimal": 59071
+    },
+    {
+      "icon_id": "15262837",
+      "name": "1_music89",
+      "font_class": "1_music89",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "7749523",
+      "name": "16gl-B",
+      "font_class": "logo",
+      "unicode": "eb85",
+      "unicode_decimal": 60293
+    },
+    {
+      "icon_id": "20735921",
+      "name": "标记",
+      "font_class": "biaoji",
+      "unicode": "e6ac",
+      "unicode_decimal": 59052
+    },
+    {
+      "icon_id": "20735923",
+      "name": "酒杯",
+      "font_class": "jiubei",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "20735924",
+      "name": "上菜",
+      "font_class": "shangcai",
+      "unicode": "e6ae",
+      "unicode_decimal": 59054
+    },
+    {
+      "icon_id": "20735925",
+      "name": "热度",
+      "font_class": "redu",
+      "unicode": "e6af",
+      "unicode_decimal": 59055
+    },
+    {
+      "icon_id": "20735926",
+      "name": "奖杯",
+      "font_class": "jiangbei",
+      "unicode": "e6b0",
+      "unicode_decimal": 59056
+    },
+    {
+      "icon_id": "20735927",
+      "name": "位置",
+      "font_class": "weizhi",
+      "unicode": "e6b1",
+      "unicode_decimal": 59057
+    },
+    {
+      "icon_id": "20735929",
+      "name": "水珠",
+      "font_class": "shuizhu",
+      "unicode": "e6b2",
+      "unicode_decimal": 59058
+    },
+    {
+      "icon_id": "20735930",
+      "name": "等级",
+      "font_class": "dengji",
+      "unicode": "e6b3",
+      "unicode_decimal": 59059
+    },
+    {
+      "icon_id": "20735959",
+      "name": "红酒-10",
+      "font_class": "hongjiu-10",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    },
+    {
+      "icon_id": "20735960",
+      "name": "地图-03",
+      "font_class": "ditu-03",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
+      "icon_id": "20736099",
+      "name": "下一首",
+      "font_class": "xiayishou",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "20736100",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e6b7",
+      "unicode_decimal": 59063
+    },
+    {
+      "icon_id": "20736101",
+      "name": "关闭声音",
+      "font_class": "guanbishengyin",
+      "unicode": "e6b8",
+      "unicode_decimal": 59064
+    },
+    {
+      "icon_id": "20736102",
+      "name": "停止声音",
+      "font_class": "tingzhishengyin",
+      "unicode": "e6b9",
+      "unicode_decimal": 59065
+    },
+    {
+      "icon_id": "20736103",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e6ba",
+      "unicode_decimal": 59066
+    },
+    {
+      "icon_id": "20736104",
+      "name": "调节模式",
+      "font_class": "tiaojiemoshi",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "20736105",
+      "name": "麦克风",
+      "font_class": "maikefeng",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "20736106",
+      "name": "中等音量",
+      "font_class": "zhongdengyinliang",
+      "unicode": "e6bd",
+      "unicode_decimal": 59069
+    },
+    {
+      "icon_id": "20736107",
+      "name": "音响环绕",
+      "font_class": "yinxianghuanrao",
+      "unicode": "e6be",
+      "unicode_decimal": 59070
+    },
+    {
+      "icon_id": "20736109",
+      "name": "放映机",
+      "font_class": "fangyingji",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "20736110",
+      "name": "最大音量",
+      "font_class": "zuidayinliang",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    },
+    {
+      "icon_id": "20736111",
+      "name": "随身听",
+      "font_class": "suishenting",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "20736115",
+      "name": "音量",
+      "font_class": "yinliang",
+      "unicode": "e6c6",
+      "unicode_decimal": 59078
+    },
+    {
+      "icon_id": "20736122",
+      "name": "文档文件",
+      "font_class": "wendangwenjian",
+      "unicode": "e6cd",
+      "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "20784199",
+      "name": "歌单标签",
+      "font_class": "gedanbiaoqian",
+      "unicode": "e6d9",
+      "unicode_decimal": 59097
+    },
+    {
+      "icon_id": "20784200",
+      "name": "专辑标签",
+      "font_class": "zhuanjibiaoqian",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "20784201",
+      "name": "下载歌单",
+      "font_class": "xiazaigedan",
+      "unicode": "e6db",
+      "unicode_decimal": 59099
+    },
+    {
+      "icon_id": "20784203",
+      "name": "购物车01",
+      "font_class": "gouwuche01",
+      "unicode": "e6dc",
+      "unicode_decimal": 59100
+    },
+    {
+      "icon_id": "20784204",
+      "name": "商店",
+      "font_class": "shangdian",
+      "unicode": "e6dd",
+      "unicode_decimal": 59101
+    },
+    {
+      "icon_id": "20784206",
+      "name": "下载本地",
+      "font_class": "xiazaibendi",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "20784207",
+      "name": "下载方式",
+      "font_class": "xiazaifangshi",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "20784208",
+      "name": "上传方式",
+      "font_class": "shangchuanfangshi",
+      "unicode": "e6e1",
+      "unicode_decimal": 59105
+    },
+    {
+      "icon_id": "20784211",
+      "name": "分享页面",
+      "font_class": "fenxiangyemian",
+      "unicode": "e6e4",
+      "unicode_decimal": 59108
+    },
+    {
+      "icon_id": "20784214",
+      "name": "复制链接",
+      "font_class": "fuzhilianjie",
+      "unicode": "e6e7",
+      "unicode_decimal": 59111
+    },
+    {
+      "icon_id": "20784215",
+      "name": "关于",
+      "font_class": "guanyu",
+      "unicode": "e6e8",
+      "unicode_decimal": 59112
+    },
+    {
+      "icon_id": "20784218",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e6eb",
+      "unicode_decimal": 59115
+    },
+    {
+      "icon_id": "20784220",
+      "name": "音符02",
+      "font_class": "yinfu02",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "20784222",
+      "name": "快进",
+      "font_class": "kuaijin",
+      "unicode": "e6ef",
+      "unicode_decimal": 59119
+    },
+    {
+      "icon_id": "20784224",
+      "name": "播放歌单",
+      "font_class": "bofanggedan",
+      "unicode": "e6f1",
+      "unicode_decimal": 59121
+    },
+    {
+      "icon_id": "20784225",
+      "name": "随机播放",
+      "font_class": "suijibofang",
+      "unicode": "e6f2",
+      "unicode_decimal": 59122
+    },
+    {
+      "icon_id": "20784227",
+      "name": "倒退",
+      "font_class": "daotui",
+      "unicode": "e6f4",
+      "unicode_decimal": 59124
+    },
+    {
+      "icon_id": "20784228",
+      "name": "音符01",
+      "font_class": "yinfu01",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "20784230",
+      "name": "上一首歌",
+      "font_class": "shangyishouge",
+      "unicode": "e6f7",
+      "unicode_decimal": 59127
+    },
+    {
+      "icon_id": "20784231",
+      "name": "循环播放",
+      "font_class": "xunhuanbofang",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    }
+  ]
+}
