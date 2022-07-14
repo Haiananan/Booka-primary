@@ -31,7 +31,9 @@ export default {};
   transition: all 0.4s;
   &:hover {
     width: 95%;
+    box-shadow: 0 6px 20px rgba($color: $color-blue, $alpha: 0.3);
   }
+
   &__icon {
     color: white;
     font-size: 1.3rem;
@@ -47,6 +49,7 @@ export default {};
     border: none;
     margin-right: 10px;
     color: white;
+    font-family: inherit;
     &:focus {
       border: none;
       text-decoration: none;

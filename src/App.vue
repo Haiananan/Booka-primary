@@ -1,12 +1,26 @@
 <template>
   <div class="container">
+    <transition name="login" appear>
+      <Login class="login-page" v-if="loginPageShow"></Login>
+    </transition>
+
     <div class="app">
-      <div class="logo icon icon-logo"></div>
-      <Welcome class="welcome"></Welcome>
+      <div class="logo" @click="demo">
+        <router-link
+          class="icon icon-logo home-logo"
+          to="/about"
+          active-class="about-active"
+        ></router-link>
+      </div>
+      <Welcome class="welcome" @click.native="login"></Welcome>
       <SearchInput class="search"></SearchInput>
       <Navigator class="navigator"></Navigator>
-      <div class="view"></div>
-      <div class="player"></div>
+      <div :class="viewShrink ? 'view-shrink' : 'view'">
+        <keep-alive>
+          <router-view></router-view>
+        </keep-alive>
+      </div>
+      <Player :class="viewShrink ? 'player-grow' : 'player'"></Player>
     </div>
   </div>
 </template>
@@ -15,29 +29,48 @@
 import Welcome from "./components/Welcome.vue";
 import SearchInput from "./components/SearchInput.vue";
 import Navigator from "./components/Navigator.vue";
+import Player from "./components/Player.vue";
+import Login from "./components/Login.vue";
+import { mapActions, mapMutations, mapState } from "vuex";
+import axios from "axios";
 export default {
   name: "App",
-  components: { Welcome, SearchInput, Navigator },
+  components: { Welcome, SearchInput, Navigator, Player, Login },
+  data() {
+    return {
+      viewShrink: false,
+      islogin: true,
+    };
+  },
+  methods: {
+    ...mapMutations(["beTourist", "offTourist"]),
+    ...mapActions(["getRecommendSongs"]),
+    demo() {
+      this.viewShrink = !this.viewShrink;
+    },
+    login() {
+      this.offTourist();
+    },
+  },
+  computed: {
+    ...mapState(["apiurl", "touristMode", "isLogin"]),
+    loginPageShow() {
+      if (!this.touristMode && !this.islogin) {
+        return true;
+      }
+    },
+  },
+  mounted() {
+    const cookie = localStorage.getItem("cookie");
+    this.getRecommendSongs(cookie);
+  },
 };
 </script>
 
 
 <style lang="scss">
-font-face {
-  font-family: "righteous";
-  src: url("./assets/font/Righteous.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: "righteous";
-  font-weight: 500;
-  line-height: 1.7;
-  box-sizing: border-box;
-  overflow: hidden;
-  /* overflow-y: hidden;
-    overflow-x: hidden; */
+a {
+  text-decoration: none;
 }
 .container {
   @include gradient-fable-wave;
@@ -78,9 +111,29 @@ body {
   justify-content: center;
   align-items: center;
 }
-.icon-logo::before {
+.home-logo {
+  cursor: pointer;
+  transition: all 0.4s;
+  transform: scale(1);
+  &::before {
+    color: white;
+    font-size: 2rem;
+  }
+  &:hover {
+    color: white;
+    text-shadow: 0 10px 20px rgba($color: white, $alpha: 0.6);
+    transform: scale(1.1);
+  }
+  &:active {
+    color: white;
+    text-shadow: 0 6px 14px rgba($color: white, $alpha: 0.6);
+    transform: scale(1);
+  }
+}
+.about-active {
   color: white;
-  font-size: 2rem;
+  text-shadow: 0 10px 20px rgba($color: white, $alpha: 0.6);
+  transform: scale(1.1);
 }
 .welcome {
   grid-row: 1/2;
@@ -94,7 +147,72 @@ body {
   grid-row: 2/-1;
   grid-column: 1/2;
 }
+.view {
+  grid-row: 2/-1;
+  width: 1100%;
 
+  transition: all 0.5s;
+  &-shrink {
+    grid-row: 2/-1;
+    width: 700%;
+
+    transition: all 0.5s;
+  }
+}
+
+.player {
+  grid-row: 2/-1;
+  grid-column: 9/-1;
+  transition: all 0.5s;
+  transform: translateX(100%);
+  &-grow {
+    grid-row: 2/-1;
+    grid-column: 9/-1;
+    transition: all 0.5s;
+    background-color: blue;
+  }
+}
+.login-page {
+  position: relative;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-dark;
+  transition: opacity 0.5s;
+
+  &-hidden {
+    width: 0;
+    opacity: 0;
+  }
+  &-display {
+    width: 100vw;
+    opacity: 1;
+  }
+}
+.login-enter-active {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.login-leave-active {
+  opacity: 0;
+  transition: all 0.5s;
+}
+@font-face {
+  font-family: "righteous";
+  src: url("./assets/font/Righteous.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "righteous";
+  font-weight: 500;
+  line-height: 1.7;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* overflow-y: hidden;
+    overflow-x: hidden; */
+}
 html {
   font-size: 100%;
   width: 100vw;
